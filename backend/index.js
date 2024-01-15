@@ -5,6 +5,7 @@ import { Todo } from "./models/todoModel.js";
 
 const app = express();
 app.use(express.json());
+
 // HomeRoute
 app.get("/", (req, res) => {
   res.status(200).send({ message: "Hello " });
