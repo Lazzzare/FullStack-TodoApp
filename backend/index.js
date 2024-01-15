@@ -4,6 +4,10 @@ import mongoose from "mongoose";
 
 const app = express();
 
+app.get("/", (req, res) => {
+  res.status(200).send({ message: "Hello " });
+});
+
 mongoose
   .connect(mongoDBUrl)
   .then(() => {
