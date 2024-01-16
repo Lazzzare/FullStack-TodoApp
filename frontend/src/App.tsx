@@ -5,6 +5,7 @@ import Header from "./components/Header/Header";
 
 const App = () => {
   const [todos, setTodos] = useState<types[]>([]);
+  const [darkMode, setDarkMode] = useState<boolean>(false);
 
   useEffect(() => {
     axios
@@ -17,8 +18,8 @@ const App = () => {
       });
   }, []);
   return (
-    <div className="w-full min-h-screen flex flex-col">
-      <Header />
+    <div className="w-full min-h-screen flex flex-col bg-[#FAFAFA]">
+      <Header darkMode={darkMode} setDarkMode={setDarkMode} />
     </div>
   );
 };
