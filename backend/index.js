@@ -1,10 +1,12 @@
 import express from "express";
 import { PORT, mongoDBUrl } from "./config.js";
 import mongoose from "mongoose";
+import cors from "cors";
 import { Todo } from "./models/todoModel.js";
 
 const app = express();
 app.use(express.json());
+app.use(cors());
 
 // HomeRoute
 app.get("/", async (req, res) => {
