@@ -1,7 +1,9 @@
 const Input = () => {
   return (
     <div>
-      <input type="text" placeholder="Create a new todo…" />
+      <form>
+        <input type="text" placeholder="Create a new todo…" />
+      </form>
     </div>
   );
 };
