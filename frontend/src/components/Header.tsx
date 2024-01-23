@@ -21,12 +21,14 @@ const Header = ({ darkMode, setDarkMode }: HeaderProps) => {
         </h1>
         {darkMode ? (
           <img
+            className="cursor-pointer"
             src={Sun}
             alt="MoonIcon"
             onClick={() => setDarkMode(!darkMode)}
           />
         ) : (
           <img
+            className="cursor-pointer"
             src={Moon}
             alt="MoonIcon"
             onClick={() => setDarkMode(!darkMode)}
