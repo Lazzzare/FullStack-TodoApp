@@ -21,7 +21,7 @@ const Input = ({ darkMode }: { darkMode: boolean }) => {
           <input
             className={`${
               darkMode ? "bg-[#25273D]" : "bg-white"
-            } w-[327px] rounded-md py-[18px] pl-[52px]`}
+            } w-[327px] md:w-[540px] rounded-md py-[18px] pl-[52px]`}
             type="text"
             placeholder="Create a new todo…"
             value={input}
