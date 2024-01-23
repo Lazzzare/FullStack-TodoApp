@@ -15,7 +15,7 @@ const Header = ({ darkMode, setDarkMode }: HeaderProps) => {
           : "bg-bg-mobile-light md:md:bg-bg-desktop-light"
       } w-full h-[200px] bg-cover bg-no-repeat`}
     >
-      <div className="px-6 pt-10 w-full flex flex-row justify-between items-center">
+      <div className="pt-10 flex flex-row justify-between items-center w-[327px] mx-auto">
         <h1 className="text-[25px] md:text-[40px] font-bold tracking-[10px] md:tracking-[15px] text-white">
           TODO
         </h1>
