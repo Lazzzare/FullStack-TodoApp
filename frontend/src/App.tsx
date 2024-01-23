@@ -28,8 +28,10 @@ const App = () => {
       }`}
     >
       <Header darkMode={darkMode} setDarkMode={setDarkMode} />
-      <Input darkMode={darkMode} />
-      <Todos todos={todos} darkMode={darkMode} setTodos={setTodos} />
+      <div className="w-[327px] md:w-[540px] mx-auto">
+        <Input darkMode={darkMode} />
+        <Todos todos={todos} darkMode={darkMode} setTodos={setTodos} />
+      </div>
     </div>
   );
 };
