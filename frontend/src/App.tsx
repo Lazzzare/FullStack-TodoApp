@@ -22,10 +22,14 @@ const App = () => {
       });
   }, []);
   return (
-    <div className="w-full min-h-screen flex flex-col bg-[#FAFAFA]">
+    <div
+      className={`w-full min-h-screen flex flex-col ${
+        darkMode ? "bg-[#171823]" : "bg-white"
+      }`}
+    >
       <Header darkMode={darkMode} setDarkMode={setDarkMode} />
-      <Input />
-      <Todos todos={todos} />
+      <Input darkMode={darkMode} />
+      <Todos todos={todos} darkMode={darkMode} />
     </div>
   );
 };
