@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import types from "./types";
 import Header from "./components/Header";
 import Input from "./components/Input";
+import Todos from "./components/Todos";
 
 const App = () => {
   const [todos, setTodos] = useState<types[]>([]);
@@ -24,6 +25,7 @@ const App = () => {
     <div className="w-full min-h-screen flex flex-col bg-[#FAFAFA]">
       <Header darkMode={darkMode} setDarkMode={setDarkMode} />
       <Input />
+      <Todos todos={todos} />
     </div>
   );
 };
