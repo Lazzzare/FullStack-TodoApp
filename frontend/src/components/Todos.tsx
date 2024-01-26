@@ -28,10 +28,8 @@ const Todos = ({
       });
   };
 
-  const [check, setCheck] = useState(false);
-
   return (
-    <div className="mt-4">
+    <div className="mt-4 border-t border-black rounded-lg">
       {todos.map((todo) => {
         return (
           <div
@@ -43,21 +41,6 @@ const Todos = ({
             }`}
           >
             <div className="relative rounded-t-lg flex py-5">
-              {check ? (
-                <img
-                  src={checkedCircle}
-                  alt="checkedCircle"
-                  className="absolute left-4"
-                  onClick={() => setCheck(!check)}
-                />
-              ) : (
-                <img
-                  src={circle}
-                  alt="circle"
-                  className="absolute left-4"
-                  onClick={() => setCheck(!check)}
-                />
-              )}
               <h1 className="pl-[52px]">{todo.title}</h1>
               <img
                 onClick={() => handleDeleteTodo(todo._id)}
@@ -78,24 +61,11 @@ const Todos = ({
       })}
       {/* ItemsLeft and Clear Completed */}
       <div
-        className={`flex items-center justify-between px-5 py-4 rounded-b-md ${
+        className={`flex items-center justify-between px-5 py-4 rounded-b-md border-b border-b-black ${
           darkMode ? "bg-[#25273D] text-[#C8CBE7]" : "bg-white text-[#494C6B]"
         }`}
       >
         <span>{todos.length} items left</span>
-        <button>Clear Completed</button>
-      </div>
-      {/* All/Active/Completed */}
-      <div
-        className={`${
-          darkMode ? "container-dark" : "container-light"
-        } container mt-4 flex items-center justify-evenly py-4 rounded-md ${
-          darkMode ? "bg-[#25273D] text-[#C8CBE7]" : "bg-white text-[#494C6B]"
-        }`}
-      >
-        <h2 className="cursor-pointer">All</h2>
-        <h2 className="cursor-pointer">Active</h2>
-        <h2 className="cursor-pointer">Completed</h2>
       </div>
     </div>
   );
