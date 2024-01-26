@@ -1,6 +1,5 @@
 import { useState } from "react";
 import axios from "axios";
-import circle from "./../assets/Circle.svg";
 
 const Input = ({ darkMode }: { darkMode: boolean }) => {
   const [input, setInput] = useState("");
@@ -26,11 +25,6 @@ const Input = ({ darkMode }: { darkMode: boolean }) => {
             placeholder="Create a new todo…"
             value={input}
             onChange={(e) => setInput(e.target.value)}
-          />
-          <img
-            className="absolute left-5 top-1/2 transform -translate-y-1/2"
-            src={circle}
-            alt=""
           />
         </div>
       </form>
