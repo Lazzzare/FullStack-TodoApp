@@ -1,9 +1,6 @@
 import dataTypes from "../types";
-import circle from "../assets/Circle.svg";
-import checkedCircle from "../assets/CompleteCircle.svg";
 import cross from "../assets/icon-cross.svg";
 import axios from "axios";
-import { useState } from "react";
 
 const Todos = ({
   todos,
