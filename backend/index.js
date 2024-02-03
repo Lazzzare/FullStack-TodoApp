@@ -1,5 +1,7 @@
 import express from "express";
 import { PORT, mongoDBUrl } from "./config.js";
+import dotenv from "dotenv";
+dotenv.config();
 import mongoose from "mongoose";
 import cors from "cors";
 import { Todo } from "./models/todoModel.js";
@@ -55,7 +57,7 @@ app.delete("/:id", async (req, res) => {
 });
 
 mongoose
-  .connect(mongoDBUrl)
+  .connect(process.env.mongoDBUrl)
   .then(() => {
     console.log(`app connected mongoose`);
   })
