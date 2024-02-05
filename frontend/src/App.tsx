@@ -9,11 +9,9 @@ const App = () => {
   const [todos, setTodos] = useState<types[]>([]);
   const [darkMode, setDarkMode] = useState<boolean>(false);
 
-  console.log(todos);
-
   useEffect(() => {
     axios
-      .get("http://localhost:3001")
+      .get("https://fullstack-todoapp-4od8.onrender.com/")
       .then((response) => {
         setTodos(response.data);
       })
@@ -29,7 +27,7 @@ const App = () => {
     >
       <Header darkMode={darkMode} setDarkMode={setDarkMode} />
       <div className="w-[327px] md:w-[540px] mx-auto">
-        <Input darkMode={darkMode} />
+        <Input darkMode={darkMode} setTodos={setTodos} />
         <Todos todos={todos} darkMode={darkMode} setTodos={setTodos} />
       </div>
     </div>
