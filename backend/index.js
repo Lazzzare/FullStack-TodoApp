@@ -21,7 +21,7 @@ app.get("/", async (req, res) => {
   }
 });
 
-// SaveTodo in Database
+// Save Todo in Database
 app.post("/", async (req, res) => {
   try {
     if (!req.body.title) {
