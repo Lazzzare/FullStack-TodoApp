@@ -13,7 +13,7 @@ const Todos = ({
 }) => {
   const handleDeleteTodo = (id: string) => {
     axios
-      .delete(`http://localhost:3001/${id}`)
+      .delete(`https://fullstack-todoapp-4od8.onrender.com/${id}`)
       .then((response) => {
         console.log(response.data.message);
         setTodos((prevTodos: dataTypes[]) =>
