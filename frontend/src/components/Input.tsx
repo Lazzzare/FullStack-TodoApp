@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import types from "../types";
+import { motion } from "framer-motion";
 
 const Input = ({
   darkMode,
@@ -38,17 +39,23 @@ const Input = ({
           handleSaveInput();
         }}
       >
-        <div className="relative">
-          <input
-            className={`${
-              darkMode ? "bg-[#25273D]" : "bg-white"
-            } w-[327px] md:w-[540px] rounded-md py-[18px] pl-[52px]`}
-            type="text"
-            placeholder="Create a new todo…"
-            value={input}
-            onChange={(e) => setInput(e.target.value)}
-          />
-        </div>
+        <motion.div
+          initial={{ opacity: 0, x: 500 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 1 }}
+        >
+          <div className="relative">
+            <input
+              className={`${
+                darkMode ? "bg-[#25273D] text-white" : "bg-white text-[#25273D]"
+              } w-[327px] md:w-[540px] rounded-md py-[18px] pl-[52px]`}
+              type="text"
+              placeholder="Create a new todo…"
+              value={input}
+              onChange={(e) => setInput(e.target.value)}
+            />
+          </div>
+        </motion.div>
       </form>
     </div>
   );
