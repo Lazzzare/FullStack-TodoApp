@@ -1,6 +1,9 @@
 # MERN-Todo-App
 
-  <img src="./src/assets/bg.PNG">
+DARK-MODE
+<img src="./frontend/src/assets/bg.PNG">
+LIGHT-MODE
+<img src="./frontend/src/assets/bg2.PNG">
 
 # About
 
@@ -8,7 +11,7 @@ This is my first MERN project - "Todo App" with React, Typescript, Tailwind, Fra
 
 # Getting Started
 
-![.gif](./src/assets/gif.gif)
+![.gif](./frontend/src/assets/gif.gif)
 
 1. First of all you need to clone app repository from github:
 
