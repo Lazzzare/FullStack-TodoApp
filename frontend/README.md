@@ -1,30 +1,53 @@
-# React + TypeScript + Vite
+# MERN-Todo-App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+  <img src="./src/assets/bg.PNG">
 
-Currently, two official plugins are available:
+# About
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is my first MERN project - "Todo App" with React, Typescript, Tailwind, Framer-Motion, NodeJS, Express, MongoDB
 
-## Expanding the ESLint configuration
+# Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+![.gif](./src/assets/gif.gif)
 
-- Configure the top-level `parserOptions` property like this:
+1. First of all you need to clone app repository from github:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```
+https://github.com/Lazzzare/FullStack-TodoApp
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Next step requires install all the dependencies.
+
+```
+npm install
+```
+
+3. Next step requires open front-end folder.
+
+```
+cd frontend
+npm run dev
+```
+
+4. Next step requires open back-end folder.
+
+```
+cd backend
+npm run dev
+```
+
+# Link
+
+- Live Site URL: [Live Site](https://full-stack-todo-app-silk.vercel.app/)
+
+# Built With
+
+- _Vite_
+- _React_
+- _Typescript (TSX)_
+- _TailwindCss_
+- _React Hooks (useState, useEffect)_
+- _framer-motion_
+- _NodeJS_
+- _Express_
+- _MongoDB_
